@@ -1,7 +1,7 @@
 import os
 import requests
 from dotenv import load_dotenv
-from rdflib import Graph, URIRef, Literal, Namespace, RDF, RDFS, OWL
+from rdflib import Graph, URIRef, Literal, Namespace, RDF
 import re
 load_dotenv()
 ONTOLOGY_FILE_PATH = 'empty_animals_ontology.rdf'
