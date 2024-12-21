@@ -71,6 +71,8 @@ def populate_ontology(json):
         location_uri = URIRef(animals_ontology[location.replace(" ", "_")])
         animals_graph.add((location_uri, RDF.type, animals_ontology.Location))
         animals_graph.add((animal_uri, animals_ontology.livesIn, location_uri))
+    
+    
 
     characteristics = json['characteristics']
     characteristic_uri = URIRef(animals_ontology[json['name'].replace(" ", "_") + "_characteristics"])
@@ -81,34 +83,37 @@ def populate_ontology(json):
         # delete special characters from key using regex
         key = re.sub(r'[^\w\s]', '', key)
         prop_uri = URIRef(animals_ontology[key])
-
         animals_graph.add((characteristic_uri, prop_uri, Literal(value)))
 
     animals_graph.add((animal_uri, animals_ontology.hasCharacteristics, characteristic_uri))
+
+    name_uri = URIRef(animals_ontology["name"])
+    animals_graph.add((animal_uri, name_uri, Literal(json["name"])))
+
 
 #names is list of 20 basic animals
 #names = ['cheetah', 'lion', 'tiger', 'elephant','giraffe', 'zebra', 'rhinoceros', 'hippopotamus', 'crocodile', 'alligator', 'penguin', 'koala', 'kangaroo', 'panda', 'koala', 'kangaroo', 'panda', 'monkey', 'gorilla', 'chimpanzee']
 names = [
     'aardvark', 'alpaca', 'ant', 'anteater', 'armadillo', 'axolotl', 'baboon', 'badger',
-    # 'bandicoot', 'barn owl', 'barracuda', 'evening bat', 'bear', 'bison', 'blue jay', 'boar',
-    # 'bobcat', 'bongo', 'buffalo', 'camel', 'capybara', 'caracal', 'cat', 'chicken',
-    # 'chimpanzee', 'chinchilla', 'clouded leopard', 'cockroach', 'coyote', 'cow', 'crab', 'barramundi fish',
-    # 'dingo', 'dog', 'dolphin', 'donkey', 'dove', 'dugong', 'eagle', 'eel', 'elephant',
-    # 'emu', 'fennec fox', 'ferret', 'fox', 'frog', 'galapagos tortoise',
-    # 'gazelle', 'gibbon', 'giant panda', 'giraffe', 'goat', 'goldfish', 'gorilla',
-    # 'guinea pig', 'hamster', 'hare', 'hawk', 'heron', 'hippopotamus', 'horse',
-    # 'parakeet', 'hyena', 'Siberian Ibex', 'iguana', 'impala', 'jaguar', 'jellyfish',
-    # 'Arizona Black Rattlesnake', 'koala', 'komodo dragon', 'kudu', 'Assassin Bug', 'leopard', 'lion',
-    # 'llama', 'lynx', 'macaw', 'Giraffe', 'mandrill', 'meerkat', 'mole', 'mongoose',
-    # 'monkey', 'moose', 'moth', 'mouse', 'narwhal', 'Golden Lion Tamarin', 'Indochinese Tiger', 'okapi',
-    # 'opossum', 'Blue Shark', 'otter', 'owl', 'Bonnethead Shark', 'parrot', 'Bull Shark', 'penguin',
-    # 'pheasant', 'pig', 'polar bear', 'porcupine', 'puffin', 'rabbit', 'raccoon',
-    # 'rat', 'red panda', 'reindeer', 'rhinoceros', 'robin', 'Frilled Shark', 'salmon',
-    # 'scorpion', 'seal', 'seahorse', 'shark', 'sheep', 'Great White Shark', 'sloth', 'snail',
-    # 'snake', 'sparrow', 'Black Widow Spider', 'squid', 'squirrel', 'Indian Star Tortoise', 'stoat', 'swan',
-    # 'tamarin', 'Zebra Finch', 'Senegal Parrot', 'tiger', 'toad', 'toucan', 'tuna', 'turtle',
-    # 'Eclectus Parrot', 'Parrot Snake', 'walrus', 'warthog', 'wasp', 'weasel', 'whale', 'wolf',
-    # 'wolverine', 'wombat', 'woodpecker', 'yak', 'zebra'
+    'bandicoot', 'barn owl', 'barracuda', 'evening bat', 'bear', 'bison', 'blue jay', 'boar',
+    'bobcat', 'bongo', 'buffalo', 'camel', 'capybara', 'caracal', 'cat', 'chicken',
+    'chimpanzee', 'chinchilla', 'clouded leopard', 'cockroach', 'coyote', 'cow', 'crab', 'barramundi fish',
+    'dingo', 'dog', 'dolphin', 'donkey', 'dove', 'dugong', 'eagle', 'eel', 'elephant',
+    'emu', 'fennec fox', 'ferret', 'fox', 'frog', 'galapagos tortoise',
+    'gazelle', 'gibbon', 'giant panda', 'giraffe', 'goat', 'goldfish', 'gorilla',
+    'guinea pig', 'hamster', 'hare', 'hawk', 'heron', 'hippopotamus', 'horse',
+    'parakeet', 'hyena', 'Siberian Ibex', 'iguana', 'impala', 'jaguar', 'jellyfish',
+    'Arizona Black Rattlesnake', 'koala', 'komodo dragon', 'kudu', 'Assassin Bug', 'leopard', 'lion',
+    'llama', 'lynx', 'macaw', 'Giraffe', 'mandrill', 'meerkat', 'mole', 'mongoose',
+    'monkey', 'moose', 'moth', 'mouse', 'narwhal', 'Golden Lion Tamarin', 'Indochinese Tiger', 'okapi',
+    'opossum', 'Blue Shark', 'otter', 'owl', 'Bonnethead Shark', 'parrot', 'Bull Shark', 'penguin',
+    'pheasant', 'pig', 'polar bear', 'porcupine', 'puffin', 'rabbit', 'raccoon',
+    'rat', 'red panda', 'reindeer', 'rhinoceros', 'robin', 'Frilled Shark', 'salmon',
+    'scorpion', 'seal', 'seahorse', 'shark', 'sheep', 'Great White Shark', 'sloth', 'snail',
+    'snake', 'sparrow', 'Black Widow Spider', 'squid', 'squirrel', 'Indian Star Tortoise', 'stoat', 'swan',
+    'tamarin', 'Zebra Finch', 'Senegal Parrot', 'tiger', 'toad', 'toucan', 'tuna', 'turtle',
+    'Eclectus Parrot', 'Parrot Snake', 'walrus', 'warthog', 'wasp', 'weasel', 'whale', 'wolf',
+    'wolverine', 'wombat', 'woodpecker', 'yak', 'zebra'
 ]
 
 for name in names:

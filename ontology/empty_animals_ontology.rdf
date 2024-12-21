@@ -31,21 +31,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#hasName -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#hasName">
-        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Animal"/>
-        <rdfs:range>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#name"/>
-                <owl:someValuesFrom rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-            </owl:Restriction>
-        </rdfs:range>
-    </owl:ObjectProperty>
-    
-
-
     <!-- http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#hasTaxonomy -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#hasTaxonomy">
