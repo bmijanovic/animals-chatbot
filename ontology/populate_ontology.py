@@ -71,6 +71,8 @@ def populate_ontology(json):
         location_uri = URIRef(animals_ontology[location.replace(" ", "_")])
         animals_graph.add((location_uri, RDF.type, animals_ontology.Location))
         animals_graph.add((animal_uri, animals_ontology.livesIn, location_uri))
+    
+    
 
     characteristics = json['characteristics']
     characteristic_uri = URIRef(animals_ontology[json['name'].replace(" ", "_") + "_characteristics"])
@@ -81,10 +83,13 @@ def populate_ontology(json):
         # delete special characters from key using regex
         key = re.sub(r'[^\w\s]', '', key)
         prop_uri = URIRef(animals_ontology[key])
-
         animals_graph.add((characteristic_uri, prop_uri, Literal(value)))
 
     animals_graph.add((animal_uri, animals_ontology.hasCharacteristics, characteristic_uri))
+
+    name_uri = URIRef(animals_ontology["name"])
+    animals_graph.add((animal_uri, name_uri, Literal(json["name"])))
+
 
 #names is list of 20 basic animals
 #names = ['cheetah', 'lion', 'tiger', 'elephant','giraffe', 'zebra', 'rhinoceros', 'hippopotamus', 'crocodile', 'alligator', 'penguin', 'koala', 'kangaroo', 'panda', 'koala', 'kangaroo', 'panda', 'monkey', 'gorilla', 'chimpanzee']
