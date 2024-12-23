@@ -1,25 +1,21 @@
 from __future__ import annotations
-from typing import Any, Dict, List, Optional
-
-from langchain.callbacks.manager import CallbackManagerForChainRun
+from typing import Any, Dict, List
+from SPARQLWrapper import SPARQLWrapper, JSON
 from langchain.chains.base import Chain
-from langchain.chains.graph_qa.prompts import (
+from langchain_community.chains.graph_qa.prompts import (
     SPARQL_GENERATION_SELECT_PROMPT,
     SPARQL_QA_PROMPT,
 )
-
-from langchain.chains.llm import LLMChain
-from langchain.graphs.rdf_graph import RdfGraph
+from langchain_community.graphs import RdfGraph
 from langchain.prompts.base import BasePromptTemplate
-from langchain.pydantic_v1 import Field
 from langchain.schema.language_model import BaseLanguageModel
-
-from SPARQLWrapper import SPARQLWrapper, JSON
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.runnables import RunnableSequence
 
 
 class SparqlQAChain(Chain):
-    sparql_generation_select_chain: LLMChain
-    qa_chain: LLMChain
+    sparql_generation_select_chain: RunnableSequence
+    qa_chain: RunnableSequence
     graph: RdfGraph
     sparql: SPARQLWrapper
     input_key: str = "query"
@@ -31,11 +27,10 @@ class SparqlQAChain(Chain):
 
     @property
     def output_keys(self) -> List[str]:
-        _output_keys = [self.output_key]
-        return _output_keys
+        return [self.output_key]
 
     @classmethod
-    def setup(cls, 
+    def setup(cls,
         llm: BaseLanguageModel,
         graph: RdfGraph,
         sparql: SPARQLWrapper,
@@ -43,8 +38,8 @@ class SparqlQAChain(Chain):
         sparql_qa_prompt: BasePromptTemplate = SPARQL_QA_PROMPT,
         **kwargs
         ) -> SparqlQAChain:
-        sparql_generation_select_chain = LLMChain(llm=llm, prompt=sparql_select_prompt)
-        qa_chain = LLMChain(llm=llm, prompt=sparql_qa_prompt)
+        sparql_generation_select_chain = sparql_select_prompt | llm | StrOutputParser()
+        qa_chain = sparql_qa_prompt | llm | StrOutputParser()
         return cls(
             sparql_generation_select_chain=sparql_generation_select_chain,
             qa_chain=qa_chain,
@@ -55,18 +50,18 @@ class SparqlQAChain(Chain):
 
     def _call(self, inputs: Dict[str, Any]) -> Dict[str, Any]:
         prompt = inputs[self.input_key]
-        print("Prompt:", prompt)
-        _sparql_query = self.sparql_generation_select_chain.run(
+        # print("Prompt:", prompt)
+        generated_sparql_query = self.sparql_generation_select_chain.invoke(
             {"prompt": prompt, "schema": self.graph.get_schema})
-        sparql_query = _sparql_query.replace("`", "")
-        print("SPARQL Query:", sparql_query)
+        generated_sparql_query = generated_sparql_query.replace("`", "")
+        # print("SPARQL Query:", generated_sparql_query)
 
-        self.sparql.setQuery(sparql_query)
+        self.sparql.setQuery(generated_sparql_query)
         self.sparql.setReturnFormat(JSON)
-        sparql_results = self.sparql.query().convert() 
+        sparql_results = self.sparql.query().convert()
         # print("SPARQL Results:", sparql_results)
 
-        answer = self.qa_chain.run({"prompt": prompt, "context": sparql_results})
-        print("Answer:", answer)
+        answer = self.qa_chain.invoke({"prompt": prompt, "context": sparql_results})
+        # print("Answer:", answer)
 
         return {self.output_key: answer}

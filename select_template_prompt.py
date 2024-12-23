@@ -31,6 +31,7 @@ Do not include any text except the SPARQL query generated.
 
 The question is:
 {prompt}"""
+
 CUSTOM_SPARQL_GENERATION_SELECT_PROMPT = PromptTemplate(
     input_variables=["schema", "prompt"], template=CUSTOM_SPARQL_GENERATION_SELECT_TEMPLATE
 )

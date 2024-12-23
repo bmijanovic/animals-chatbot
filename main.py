@@ -1,12 +1,11 @@
-import requests
 import os
-from fastapi import FastAPI, Request
+from fastapi import FastAPI
 from pydantic import BaseModel
-from SPARQLWrapper import SPARQLWrapper, JSON
+from SPARQLWrapper import SPARQLWrapper
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from qa_chain import SparqlQAChain
-from langchain.graphs.rdf_graph import RdfGraph
+from langchain_community.graphs import RdfGraph
 from select_template_prompt import CUSTOM_SPARQL_GENERATION_SELECT_PROMPT
 
 load_dotenv()
@@ -25,10 +24,9 @@ graph = RdfGraph(
 graph.load_schema()
 
 llm = ChatGroq(
-    model="llama3-70b-8192",
+    model_name="llama3-70b-8192",
     temperature=0,
     max_tokens=1024,
-    timeout=None,
     max_retries=2,
     streaming=True,
 )
@@ -47,11 +45,10 @@ def read_root():
 @app.post("/")
 async def ask_question(request: UserInput):
     question = request.question
-    # query is to get all triplets
     query = {
         "query": question,
     }
-    answer = chain._call(query) 
+    answer = chain._call(query)
     return answer
 
 
