@@ -63,7 +63,7 @@ def populate_ontology(json):
     scientific_name_uri = URIRef(animals_ontology[taxonomy['scientific_name'].replace(" ", "_")])
     animals_graph.add((scientific_name_uri, RDF.type, animals_ontology.Scientific_name))
     animals_graph.add((scientific_name_uri, animals_ontology.belongsTo, genus_uri))
-    animals_graph.add((animal_uri, animals_ontology.hasTaxonomy, scientific_name_uri))
+    animals_graph.add((animal_uri, animals_ontology.hasScientificName, scientific_name_uri))
 
 
     locations = json['locations']

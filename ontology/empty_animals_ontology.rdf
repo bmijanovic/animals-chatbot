@@ -21,6 +21,28 @@
     
 
 
+    <!-- http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#belongsTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#belongsTo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Class"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Family"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Genus"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Kingdom"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Order"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Phylum"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Scientific_name"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Class"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Family"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Genus"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Kingdom"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Order"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Phylum"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Scientific_name"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#hasCharacteristics -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#hasCharacteristics">
@@ -31,18 +53,11 @@
     
 
 
-    <!-- http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#hasTaxonomy -->
+    <!-- http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#hasScientificName -->
 
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#hasTaxonomy">
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#hasScientificName">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Animal"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Class"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Family"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Genus"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Kingdom"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Order"/>
-        <rdfs:range rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Phylum"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Scientific_name"/>
     </owl:ObjectProperty>
     
@@ -55,6 +70,15 @@
         <rdfs:domain rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Animal"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Location"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#topObjectProperty -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#topObjectProperty">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Animal"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Scientific_name"/>
+    </rdf:Description>
     
 
 
