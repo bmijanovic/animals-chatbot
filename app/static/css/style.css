@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.chat-history {
+    max-height: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-item {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.chat-item .question-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+.chat-item .question {
+    background-color: #e9f7fd;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #0056b3;
+    display: inline-block;
+    position: relative;
+    margin-right: 40px;
+    max-width: 65%;
+}
+
+.chat-item .emoji-human {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    z-index: 10;
+}
+
+.chat-item .answer-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+}
+
+.chat-item .answer {
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+    font-style: italic;
+    color: #888;
+    display: inline-block;
+    position: relative;
+    margin-left: 40px;
+    max-width: 65%;
+}
+
+.chat-item .emoji-robot {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    z-index: 10;
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    max-width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#question-container {
+    display: block;
+    margin-bottom: 15px;
+}
+
+@media (max-width: 768px) {
+    .chat-container {
+        padding: 15px;
+    }
+
+    textarea {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}

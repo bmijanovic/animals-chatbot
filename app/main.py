@@ -1,15 +1,19 @@
 import os
-from contextlib import asynccontextmanager
 
-from fastapi import FastAPI
-from pydantic import BaseModel
-from SPARQLWrapper import SPARQLWrapper, RDF
+from contextlib import asynccontextmanager
+from fastapi import FastAPI, Request
+from starlette.responses import HTMLResponse
+from starlette.staticfiles import StaticFiles
+from starlette.templating import Jinja2Templates
+
+from SPARQLWrapper import SPARQLWrapper
 from dotenv import load_dotenv
 from langchain_groq import ChatGroq
-from qa_chain import SparqlQAChain
 from langchain_community.graphs import RdfGraph
-from select_template_prompt import CUSTOM_SPARQL_GENERATION_SELECT_PROMPT
-import uvicorn
+
+from app.core.qa_chain import SparqlQAChain
+from app.core.schemas import UserInput
+from app.core.select_template_prompt import CUSTOM_SPARQL_GENERATION_SELECT_PROMPT
 
 load_dotenv()
 VIRTUOSO_SPARQL_URL = "http://localhost:8890/sparql"
@@ -25,6 +29,8 @@ chain = None
 app = FastAPI(
     lifespan=lambda _: lifespan_handler()
 )
+app.mount("/static", StaticFiles(directory="static"), name="static")
+templates = Jinja2Templates(directory="templates")
 
 
 @asynccontextmanager
@@ -77,29 +83,21 @@ async def lifespan_handler():
 
     # Shutdown code (cleanup)
     # print("Shutting down resources...")
-    import os
     os.remove(temp_rdf_file)
 
 
-
-class UserInput(BaseModel):
-    question: str
-
-
-@app.get("/")
-def read_root():
-    return {"message": "Welcome to the Animals Chatbot API"}
+@app.get("/", response_class=HTMLResponse)
+def serve_main_page(request: Request):
+    return templates.TemplateResponse("index.html", {"request": request})
 
 
 @app.post("/")
 async def ask_question(request: UserInput):
-    question = request.question
-    query = {
-        "query": question,
-    }
-    answer = chain._call(query)
-    return answer
+    input = {"query": request.question}
+    output = chain._call(input)
+    return {"answer": output['result']}
 
 
 if __name__ == "__main__":
+    import uvicorn
     uvicorn.run(app, host="0.0.0.0", port=8000)
