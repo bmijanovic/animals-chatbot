@@ -28,7 +28,19 @@ Phylum belongs to Kingdom.
 
 ### Important Rules:
 - When filtering for a specific taxonomy level, such as kingdom `Animalia`, use the URI format: `FILTER(?kingdom = ao:Animalia)`.
-- For every characteristic, use the `OPTIONAL` clause.
+- Queries should be case-insensitive.
+- When filtering for a specific animal, such as `Alpaca`, use name instead of scientific name, example: 
+```
+?animal ao:name ?name .
+FILTER(CONTAINS(LCASE(STR(?name)), LCASE("Alpaca")))
+```
+- For every characteristic, use the `OPTIONAL` clause individualy (independently), example:
+```
+?animal ao:hasCharacteristics ?characteristics
+OPTIONAL{{?characteristics ao:weight ?weight}}
+OPTIONAL{{?characteristics ao:diet ?diet}}
+```
+
 - Do not use other prexifes than ao
 
 

@@ -11,9 +11,9 @@ from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from langchain_community.graphs import RdfGraph
 
-from app.core.qa_chain import SparqlQAChain
-from app.core.schemas import UserInput
-from app.core.select_template_prompt import CUSTOM_SPARQL_GENERATION_SELECT_PROMPT
+from core.qa_chain import SparqlQAChain
+from core.schemas import UserInput
+from core.select_template_prompt import CUSTOM_SPARQL_GENERATION_SELECT_PROMPT
 
 load_dotenv()
 VIRTUOSO_SPARQL_URL = "http://localhost:8890/sparql"

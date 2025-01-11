@@ -843,3 +843,4 @@ hs_err_pid*
 ontology/populated_ontology.rdf
 ontology/mega_populated_ontology.rdf
 /app/temp_data.rdf
+.env
