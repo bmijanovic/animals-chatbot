@@ -1,60 +1,6 @@
 from langchain_core.prompts.prompt import PromptTemplate
 
-CUSTOM_SPARQL_GENERATION_SELECT_TEMPLATE = """Task: Generate a SPARQL SELECT statement for querying a graph database.
-For instance, to find all email addresses of John Doe, the following query in backticks would be suitable:
-```
-PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-SELECT ?email
-WHERE {{
-    ?person foaf:name "John Doe" .
-    ?person foaf:mbox ?email .
-}}
-```
-Instructions:
-Use only the node types and properties provided in the schema.
-Do not use any node types and properties that are not explicitly provided.
-Include all necessary prefixes.
-Object characteristics is connected with animal by the property hasCharacteristics.
-All properties are in characteristic node.
-Use only the node types and properties provided in the schema.
-Scientific_name is connected with animal by the property hasScientificName.
-Kingdom, Phylum, Class, Order, Family, Genus, Scientific_name are connected with next one by the property belongsTo.
-Scientific_name belongs Genus,
-Genus belongs to Family,
-Family belongs to Order,
-Order belongs to Class,
-Class belongs to Phylum,
-Phylum belongs to Kingdom.
-
-### Important Rules:
-- When filtering for a specific taxonomy level, such as kingdom `Animalia`, use the URI format: `FILTER(?kingdom = ao:Animalia)`.
-- Queries should be case-insensitive.
-- When filtering for a specific animal, such as `Alpaca`, use name instead of scientific name, example: 
-```
-?animal ao:name ?name .
-FILTER(CONTAINS(LCASE(STR(?name)), LCASE("Alpaca")))
-```
-- For every characteristic, use the `OPTIONAL` clause individualy (independently), example:
-```
-?animal ao:hasCharacteristics ?characteristics
-OPTIONAL{{?characteristics ao:weight ?weight}}
-OPTIONAL{{?characteristics ao:diet ?diet}}
-```
-
-- Do not use other prexifes than ao
-
-
-Schema:
-{schema}
-
-Note: Be as concise as possible.
-Do not include any explanations or apologies in your responses.
-Do not respond to any questions that ask for anything else than for you to construct a SPARQL query.
-Do not include any text except the SPARQL query generated.
-
-The question is:
-{prompt}
-"""
+CUSTOM_SPARQL_GENERATION_SELECT_TEMPLATE = """Task-----\nGenerate **only** a valid SPARQL 1.1 **SELECT** query that can be run against the provided RDF graph.\n\nRules\n1. Use exactly one prefix:\n   PREFIX ao: <http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#>\n   Do **not** introduce any other prefixes.\n2. Refer **only** to classes / properties that appear in the schema. No hallucinations.\n3. Taxonomy hierarchy (linked with `ao:belongsTo`):\n   Kingdom → Phylum → Class → Order → Family → Genus → Scientific_name\n4. Other links\n   * `ao:hasScientificName` connects an animal to its scientific-name node.\n   * `ao:hasCharacteristics` connects an animal to its characteristics node; all literal traits (weight, diet, etc.) live there.\n5. When you need to filter by:\n   * **Animal common name** – match `ao:name` with\n     ?animal ao:name ?name .\n     FILTER(CONTAINS(LCASE(STR(?name)), LCASE(\"alpaca\")))\n   * **A taxonomy level** – compare URIs directly, e.g.\n     FILTER(?kingdom = ao:Animalia)\n6. When asking general about animal, put every characteristic filter in its **own** OPTIONAL {{ }} block – never nest them together. If you need to give just one characteristic **do not** use OPTIONAL. \n7. Compare strings using `LCASE` + `CONTAINS` for case-insensitive matching.\n8. Use meaningful variable names (`?animal ?kingdom ?weight …`) and add `DISTINCT` if duplicates are possible.\n9. Return only the variables the user asked for; no extra columns.\n10. Do **not** output explanations, apologies, or anything except the query inside a code block.\n\nExample (email lookup, different ontology for illustration):\nPREFIX foaf: <http://xmlns.com/foaf/0.1/>\nSELECT ?email WHERE {{\n  ?person foaf:name \"John Doe\" .\n  ?person foaf:mbox ?email .\n}}\n\n-----  INPUTS  -----\nSchema snippet:\n{schema}\n\nNatural-language question:\n{prompt}\n"""
 
 CUSTOM_SPARQL_GENERATION_SELECT_PROMPT = PromptTemplate(
     input_variables=["schema", "prompt"], template=CUSTOM_SPARQL_GENERATION_SELECT_TEMPLATE
