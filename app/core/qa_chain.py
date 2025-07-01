@@ -53,7 +53,7 @@ class SparqlQAChain(Chain):
         # print("Prompt:", prompt)
         generated_sparql_query = self.sparql_generation_select_chain.invoke(
             {"prompt": prompt, "schema": self.graph.get_schema})
-        generated_sparql_query = generated_sparql_query.replace("`", "")
+        generated_sparql_query = generated_sparql_query.replace("`", "").replace("sparql", "")
         # print("SPARQL Query:", generated_sparql_query)
 
         self.sparql.setQuery(generated_sparql_query)

@@ -8,8 +8,8 @@ from starlette.templating import Jinja2Templates
 
 from SPARQLWrapper import SPARQLWrapper
 from dotenv import load_dotenv
-from langchain_groq import ChatGroq
 from langchain_community.graphs import RdfGraph
+from langchain_openai import ChatOpenAI
 
 from core.qa_chain import SparqlQAChain
 from core.schemas import UserInput
@@ -18,7 +18,6 @@ from core.select_template_prompt import CUSTOM_SPARQL_GENERATION_SELECT_PROMPT
 load_dotenv()
 VIRTUOSO_SPARQL_URL = "http://localhost:8890/sparql"
 GRAPH_IRI = "http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl"
-os.environ["GROQ_API_KEY"] = os.getenv("GROQ_API_KEY")
 
 temp_rdf_file = "temp_data.rdf"
 sparql = None
@@ -65,11 +64,9 @@ async def lifespan_handler():
     )
 
     # Initialize the LLM
-    llm = ChatGroq(
-        model_name="llama3-70b-8192",
+    llm = ChatOpenAI(
+        model="gpt-4o",
         temperature=0,
-        max_tokens=1024,
-        max_retries=2,
         streaming=True,
     )
 
