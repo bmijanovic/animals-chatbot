@@ -1,0 +1,13 @@
+services:
+  virtuoso:
+    image: openlink/virtuoso-opensource-7
+    container_name: AnimalDB
+    environment:
+      - DBA_PASSWORD=tehnotrube
+    ports:
+      - "1111:1111"
+      - "8890:8890"
+    volumes:
+      - ./Ontology-DB:/Ontology-DB
+    stdin_open: true
+    tty: true

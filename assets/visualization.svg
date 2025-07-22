@@ -1,0 +1,587 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1653pt" height="666pt" viewBox="0.00 0.00 1652.51 665.60">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 661.6)">
+<title>%0</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-661.6 1648.5124,-661.6 1648.5124,4 -4,4"/>
+<!-- N26 -->
+<g id="node1" class="node">
+<title>N26</title>
+<g id="a_node1"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Family" xlink:title="ns1:Family">
+<ellipse fill="none" stroke="#000000" cx="301.8816" cy="-284.4" rx="54.4913" ry="18"/>
+<text text-anchor="middle" x="301.8816" y="-280.2" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:Family</text>
+</a>
+</g>
+</g>
+<!-- N25 -->
+<g id="node2" class="node">
+<title>N25</title>
+<g id="a_node2"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Scientific_name" xlink:title="ns1:Scientific_name">
+<ellipse fill="none" stroke="#000000" cx="89.8816" cy="-462" rx="89.7634" ry="18"/>
+<text text-anchor="middle" x="89.8816" y="-457.8" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:Scientific_name</text>
+</a>
+</g>
+</g>
+<!-- N3 -->
+<g id="node3" class="node">
+<title>N3</title>
+<g id="a_node3"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Asia" xlink:title="ns1:Asia">
+<ellipse fill="none" stroke="#000000" cx="95.8816" cy="-550.8" rx="44.6607" ry="18"/>
+<text text-anchor="middle" x="95.8816" y="-546.6" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:Asia</text>
+</a>
+</g>
+</g>
+<!-- N7 -->
+<g id="node4" class="node">
+<title>N7</title>
+<g id="a_node4"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Mammalia" xlink:title="ns1:Mammalia">
+<ellipse fill="none" stroke="#000000" cx="363.8816" cy="-195.6" rx="68.9371" ry="18"/>
+<text text-anchor="middle" x="363.8816" y="-191.4" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:Mammalia</text>
+</a>
+</g>
+</g>
+<!-- N18 -->
+<g id="node14" class="node">
+<title>N18</title>
+<g id="a_node14"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Chordata" xlink:title="ns1:Chordata">
+<ellipse fill="none" stroke="#000000" cx="299.8816" cy="-106.8" rx="62.5605" ry="18"/>
+<text text-anchor="middle" x="299.8816" y="-102.6" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:Chordata</text>
+</a>
+</g>
+</g>
+<!-- N7&#45;&gt;N18 -->
+<g id="edge6" class="edge">
+<title>N7-&gt;N18</title>
+<g id="a_edge6"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#belongsTo" xlink:title="ns1:belongsTo">
+<path fill="none" stroke="#000000" d="M341.8672,-178.3042C335.7208,-172.7723 329.3809,-166.326 324.444,-159.6 318.7936,-151.9019 313.9691,-142.6967 310.1302,-134.1444"/>
+<polygon fill="#000000" stroke="#000000" points="313.3344,-132.735 306.2232,-124.8813 306.8846,-135.4554 313.3344,-132.735"/>
+</a>
+</g>
+<g id="a_edge6-label"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#belongsTo" xlink:title="ns1:belongsTo">
+<text text-anchor="middle" x="366.1004" y="-147" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:belongsTo</text>
+</a>
+</g>
+</g>
+<!-- N24 -->
+<g id="node20" class="node">
+<title>N24</title>
+<g id="a_node20"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Class" xlink:title="ns1:Class">
+<ellipse fill="none" stroke="#000000" cx="428.8816" cy="-106.8" rx="48.109" ry="18"/>
+<text text-anchor="middle" x="428.8816" y="-102.6" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:Class</text>
+</a>
+</g>
+</g>
+<!-- N7&#45;&gt;N24 -->
+<g id="edge5" class="edge">
+<title>N7-&gt;N24</title>
+<g id="a_edge5"><a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="a">
+<path fill="none" stroke="#000000" d="M388.1244,-178.7232C394.8327,-173.2031 401.6889,-166.6582 406.8816,-159.6 412.3803,-152.1259 416.7958,-143.0739 420.1863,-134.5914"/>
+<polygon fill="#000000" stroke="#000000" points="423.5379,-135.6177 423.6992,-125.0241 416.9669,-133.2049 423.5379,-135.6177"/>
+</a>
+</g>
+<g id="a_edge5-label"><a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="a">
+<text text-anchor="middle" x="419.9889" y="-147" font-family="Times,serif" font-size="14.00" fill="#000000">a</text>
+</a>
+</g>
+</g>
+<!-- N10 -->
+<g id="node5" class="node">
+<title>N10</title>
+<g id="a_node5"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Mammalia" xlink:title="11 - 17 years">
+<polygon fill="#ffff00" stroke="#ffff00" points="424.0771,-480 335.6861,-480 335.6861,-444 424.0771,-444 424.0771,-480"/>
+<text text-anchor="middle" x="379.8816" y="-457.8" font-family="Times,serif" font-size="14.00" fill="#000000">11 - 17 years</text>
+</a>
+</g>
+</g>
+<!-- N17 -->
+<g id="node6" class="node">
+<title>N17</title>
+<g id="a_node6"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Characteristics" xlink:title="ns1:Characteristics">
+<ellipse fill="none" stroke="#000000" cx="526.8816" cy="-462" rx="84.5208" ry="18"/>
+<text text-anchor="middle" x="526.8816" y="-457.8" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:Characteristics</text>
+</a>
+</g>
+</g>
+<!-- N16 -->
+<g id="node7" class="node">
+<title>N16</title>
+<g id="a_node7"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Characteristics" xlink:title="Rodents, Monkeys, Deer">
+<polygon fill="#ffff00" stroke="#ffff00" points="784.5683,-480 629.1949,-480 629.1949,-444 784.5683,-444 784.5683,-480"/>
+<text text-anchor="middle" x="706.8816" y="-457.8" font-family="Times,serif" font-size="14.00" fill="#000000">Rodents, Monkeys, Deer</text>
+</a>
+</g>
+</g>
+<!-- N6 -->
+<g id="node8" class="node">
+<title>N6</title>
+<g id="a_node8"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Carnivora" xlink:title="ns1:Carnivora">
+<ellipse fill="none" stroke="#000000" cx="439.8816" cy="-284.4" rx="65.991" ry="18"/>
+<text text-anchor="middle" x="439.8816" y="-280.2" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:Carnivora</text>
+</a>
+</g>
+</g>
+<!-- N6&#45;&gt;N7 -->
+<g id="edge21" class="edge">
+<title>N6-&gt;N7</title>
+<g id="a_edge21"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#belongsTo" xlink:title="ns1:belongsTo">
+<path fill="none" stroke="#000000" d="M404.4735,-269.2058C395.2353,-263.7967 386.0343,-256.8897 379.444,-248.4 373.9447,-241.3157 370.386,-232.3301 368.0841,-223.7891"/>
+<polygon fill="#000000" stroke="#000000" points="371.4391,-222.7521 365.8537,-213.7492 364.6057,-224.2703 371.4391,-222.7521"/>
+</a>
+</g>
+<g id="a_edge21-label"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#belongsTo" xlink:title="ns1:belongsTo">
+<text text-anchor="middle" x="421.1004" y="-235.8" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:belongsTo</text>
+</a>
+</g>
+</g>
+<!-- N8 -->
+<g id="node13" class="node">
+<title>N8</title>
+<g id="a_node13"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Order" xlink:title="ns1:Order">
+<ellipse fill="none" stroke="#000000" cx="500.8816" cy="-195.6" rx="49.7981" ry="18"/>
+<text text-anchor="middle" x="500.8816" y="-191.4" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:Order</text>
+</a>
+</g>
+</g>
+<!-- N6&#45;&gt;N8 -->
+<g id="edge20" class="edge">
+<title>N6-&gt;N8</title>
+<g id="a_edge20"><a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="a">
+<path fill="none" stroke="#000000" d="M452.9846,-266.5556C457.1562,-260.7955 461.7572,-254.3589 465.8816,-248.4 471.8276,-239.8092 478.1805,-230.3232 483.8193,-221.7896"/>
+<polygon fill="#000000" stroke="#000000" points="486.8197,-223.597 489.3902,-213.3187 480.9711,-219.7507 486.8197,-223.597"/>
+</a>
+</g>
+<g id="a_edge20-label"><a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="a">
+<text text-anchor="middle" x="479.9889" y="-235.8" font-family="Times,serif" font-size="14.00" fill="#000000">a</text>
+</a>
+</g>
+</g>
+<!-- N11 -->
+<g id="node9" class="node">
+<title>N11</title>
+<g id="a_node9"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Carnivora" xlink:title="40 mph">
+<polygon fill="#ffff00" stroke="#ffff00" points="861.2735,-480 802.4897,-480 802.4897,-444 861.2735,-444 861.2735,-480"/>
+<text text-anchor="middle" x="831.8816" y="-457.8" font-family="Times,serif" font-size="14.00" fill="#000000">40 mph</text>
+</a>
+</g>
+</g>
+<!-- N23 -->
+<g id="node10" class="node">
+<title>N23</title>
+<g id="a_node10"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Genus" xlink:title="ns1:Genus">
+<ellipse fill="none" stroke="#000000" cx="218.8816" cy="-373.2" rx="51.6073" ry="18"/>
+<text text-anchor="middle" x="218.8816" y="-369" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:Genus</text>
+</a>
+</g>
+</g>
+<!-- N22 -->
+<g id="node11" class="node">
+<title>N22</title>
+<g id="a_node11"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Felidae" xlink:title="ns1:Felidae">
+<ellipse fill="none" stroke="#000000" cx="343.8816" cy="-373.2" rx="55.614" ry="18"/>
+<text text-anchor="middle" x="343.8816" y="-369" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:Felidae</text>
+</a>
+</g>
+</g>
+<!-- N22&#45;&gt;N26 -->
+<g id="edge1" class="edge">
+<title>N22-&gt;N26</title>
+<g id="a_edge1"><a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="a">
+<path fill="none" stroke="#000000" d="M335.3823,-355.23C329.4617,-342.7123 321.457,-325.7879 314.7568,-311.6218"/>
+<polygon fill="#000000" stroke="#000000" points="317.8079,-309.8867 310.3683,-302.3433 311.48,-312.8796 317.8079,-309.8867"/>
+</a>
+</g>
+<g id="a_edge1-label"><a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="a">
+<text text-anchor="middle" x="329.9889" y="-324.6" font-family="Times,serif" font-size="14.00" fill="#000000">a</text>
+</a>
+</g>
+</g>
+<!-- N22&#45;&gt;N6 -->
+<g id="edge2" class="edge">
+<title>N22-&gt;N6</title>
+<g id="a_edge2"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#belongsTo" xlink:title="ns1:belongsTo">
+<path fill="none" stroke="#000000" d="M362.3914,-356.0785C376.9066,-342.6519 397.2961,-323.7916 413.517,-308.7873"/>
+<polygon fill="#000000" stroke="#000000" points="416.1367,-311.1318 421.1011,-301.772 411.3834,-305.9931 416.1367,-311.1318"/>
+</a>
+</g>
+<g id="a_edge2-label"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#belongsTo" xlink:title="ns1:belongsTo">
+<text text-anchor="middle" x="442.1004" y="-324.6" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:belongsTo</text>
+</a>
+</g>
+</g>
+<!-- N21 -->
+<g id="node12" class="node">
+<title>N21</title>
+<g id="a_node12"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Neofelis" xlink:title="ns1:Neofelis">
+<ellipse fill="none" stroke="#000000" cx="257.8816" cy="-462" rx="59.6878" ry="18"/>
+<text text-anchor="middle" x="257.8816" y="-457.8" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:Neofelis</text>
+</a>
+</g>
+</g>
+<!-- N21&#45;&gt;N23 -->
+<g id="edge7" class="edge">
+<title>N21-&gt;N23</title>
+<g id="a_edge7"><a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="a">
+<path fill="none" stroke="#000000" d="M249.9894,-444.03C244.4917,-431.5123 237.0587,-414.5879 230.8371,-400.4218"/>
+<polygon fill="#000000" stroke="#000000" points="233.9879,-398.8917 226.7621,-391.1433 227.5788,-401.7066 233.9879,-398.8917"/>
+</a>
+</g>
+<g id="a_edge7-label"><a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="a">
+<text text-anchor="middle" x="244.9889" y="-413.4" font-family="Times,serif" font-size="14.00" fill="#000000">a</text>
+</a>
+</g>
+</g>
+<!-- N21&#45;&gt;N22 -->
+<g id="edge8" class="edge">
+<title>N21-&gt;N22</title>
+<g id="a_edge8"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#belongsTo" xlink:title="ns1:belongsTo">
+<path fill="none" stroke="#000000" d="M274.8724,-444.456C287.7948,-431.1129 305.737,-412.5865 320.0874,-397.7689"/>
+<polygon fill="#000000" stroke="#000000" points="322.776,-400.0238 327.2187,-390.4054 317.7475,-395.1539 322.776,-400.0238"/>
+</a>
+</g>
+<g id="a_edge8-label"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#belongsTo" xlink:title="ns1:belongsTo">
+<text text-anchor="middle" x="350.1004" y="-413.4" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:belongsTo</text>
+</a>
+</g>
+</g>
+<!-- N19 -->
+<g id="node15" class="node">
+<title>N19</title>
+<g id="a_node15"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Animalia" xlink:title="ns1:Animalia">
+<ellipse fill="none" stroke="#000000" cx="230.8816" cy="-18" rx="63.1383" ry="18"/>
+<text text-anchor="middle" x="230.8816" y="-13.8" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:Animalia</text>
+</a>
+</g>
+</g>
+<!-- N18&#45;&gt;N19 -->
+<g id="edge10" class="edge">
+<title>N18-&gt;N19</title>
+<g id="a_edge10"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#belongsTo" xlink:title="ns1:belongsTo">
+<path fill="none" stroke="#000000" d="M265.8399,-91.5793C257.0541,-86.1697 248.4044,-79.2692 242.444,-70.8 237.3758,-63.5985 234.4696,-54.5816 232.8214,-46.048"/>
+<polygon fill="#000000" stroke="#000000" points="236.2685,-45.4297 231.3741,-36.0331 229.3405,-46.4309 236.2685,-45.4297"/>
+</a>
+</g>
+<g id="a_edge10-label"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#belongsTo" xlink:title="ns1:belongsTo">
+<text text-anchor="middle" x="284.1004" y="-58.2" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:belongsTo</text>
+</a>
+</g>
+</g>
+<!-- N20 -->
+<g id="node22" class="node">
+<title>N20</title>
+<g id="a_node22"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Phylum" xlink:title="ns1:Phylum">
+<ellipse fill="none" stroke="#000000" cx="368.8816" cy="-18" rx="57.365" ry="18"/>
+<text text-anchor="middle" x="368.8816" y="-13.8" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:Phylum</text>
+</a>
+</g>
+</g>
+<!-- N18&#45;&gt;N20 -->
+<g id="edge9" class="edge">
+<title>N18-&gt;N20</title>
+<g id="a_edge9"><a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="a">
+<path fill="none" stroke="#000000" d="M313.8448,-88.83C323.9178,-75.8665 337.6632,-58.1768 348.8972,-43.7191"/>
+<polygon fill="#000000" stroke="#000000" points="351.8027,-45.6842 355.1747,-35.6402 346.2752,-41.3891 351.8027,-45.6842"/>
+</a>
+</g>
+<g id="a_edge9-label"><a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="a">
+<text text-anchor="middle" x="343.9889" y="-58.2" font-family="Times,serif" font-size="14.00" fill="#000000">a</text>
+</a>
+</g>
+</g>
+<!-- N4 -->
+<g id="node16" class="node">
+<title>N4</title>
+<g id="a_node16"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Neofelis_nebulosa" xlink:title="ns1:Neofelis_nebulosa">
+<ellipse fill="none" stroke="#000000" cx="257.8816" cy="-550.8" rx="98.9974" ry="18"/>
+<text text-anchor="middle" x="257.8816" y="-546.6" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:Neofelis_nebulosa</text>
+</a>
+</g>
+</g>
+<!-- N4&#45;&gt;N25 -->
+<g id="edge3" class="edge">
+<title>N4-&gt;N25</title>
+<g id="a_edge3"><a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="a">
+<path fill="none" stroke="#000000" d="M225.4895,-533.6785C198.5597,-519.4441 160.0757,-499.1026 130.9794,-483.7231"/>
+<polygon fill="#000000" stroke="#000000" points="132.3655,-480.497 121.8889,-478.9182 129.0943,-486.6856 132.3655,-480.497"/>
+</a>
+</g>
+<g id="a_edge3-label"><a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="a">
+<text text-anchor="middle" x="192.9889" y="-502.2" font-family="Times,serif" font-size="14.00" fill="#000000">a</text>
+</a>
+</g>
+</g>
+<!-- N4&#45;&gt;N21 -->
+<g id="edge4" class="edge">
+<title>N4-&gt;N21</title>
+<g id="a_edge4"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#belongsTo" xlink:title="ns1:belongsTo">
+<path fill="none" stroke="#000000" d="M257.8816,-532.4006C257.8816,-520.2949 257.8816,-504.2076 257.8816,-490.4674"/>
+<polygon fill="#000000" stroke="#000000" points="261.3817,-490.072 257.8816,-480.072 254.3817,-490.0721 261.3817,-490.072"/>
+</a>
+</g>
+<g id="a_edge4-label"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#belongsTo" xlink:title="ns1:belongsTo">
+<text text-anchor="middle" x="299.1004" y="-502.2" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:belongsTo</text>
+</a>
+</g>
+</g>
+<!-- N12 -->
+<g id="node17" class="node">
+<title>N12</title>
+<g id="a_node17"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Neofelis_nebulosa" xlink:title="Fur">
+<polygon fill="#ffff00" stroke="#ffff00" points="932.8816,-480 878.8816,-480 878.8816,-444 932.8816,-444 932.8816,-480"/>
+<text text-anchor="middle" x="905.8816" y="-457.8" font-family="Times,serif" font-size="14.00" fill="#000000">Fur</text>
+</a>
+</g>
+</g>
+<!-- N5 -->
+<g id="node18" class="node">
+<title>N5</title>
+<g id="a_node18"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Animal" xlink:title="ns1:Animal">
+<ellipse fill="none" stroke="#000000" cx="430.8816" cy="-550.8" rx="56.1976" ry="18"/>
+<text text-anchor="middle" x="430.8816" y="-546.6" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:Animal</text>
+</a>
+</g>
+</g>
+<!-- N9 -->
+<g id="node19" class="node">
+<title>N9</title>
+<g id="a_node19"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Animal" xlink:title="11kg - 30kg (24lbs - 66lbs)">
+<polygon fill="#ffff00" stroke="#ffff00" points="1119.1945,-480 950.5687,-480 950.5687,-444 1119.1945,-444 1119.1945,-480"/>
+<text text-anchor="middle" x="1034.8816" y="-457.8" font-family="Times,serif" font-size="14.00" fill="#000000">11kg - 30kg (24lbs - 66lbs)</text>
+</a>
+</g>
+</g>
+<!-- N14 -->
+<g id="node21" class="node">
+<title>N14</title>
+<g id="a_node21"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Class" xlink:title="Dense tropical forest and jungle">
+<polygon fill="#ffff00" stroke="#ffff00" points="1332.2051,-480 1137.5581,-480 1137.5581,-444 1332.2051,-444 1332.2051,-480"/>
+<text text-anchor="middle" x="1234.8816" y="-457.8" font-family="Times,serif" font-size="14.00" fill="#000000">Dense tropical forest and jungle</text>
+</a>
+</g>
+</g>
+<!-- N13 -->
+<g id="node23" class="node">
+<title>N13</title>
+<g id="a_node23"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Phylum" xlink:title="Tigers, Leopards, Humans">
+<polygon fill="#ffff00" stroke="#ffff00" points="1514.8887,-480 1350.8745,-480 1350.8745,-444 1514.8887,-444 1514.8887,-480"/>
+<text text-anchor="middle" x="1432.8816" y="-457.8" font-family="Times,serif" font-size="14.00" fill="#000000">Tigers, Leopards, Humans</text>
+</a>
+</g>
+</g>
+<!-- N0 -->
+<g id="node24" class="node">
+<title>N0</title>
+<g id="a_node24"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Clouded_Leopard" xlink:title="ns1:Clouded_Leopard">
+<ellipse fill="none" stroke="#000000" cx="430.8816" cy="-639.6" rx="96.7177" ry="18"/>
+<text text-anchor="middle" x="430.8816" y="-635.4" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:Clouded_Leopard</text>
+</a>
+</g>
+</g>
+<!-- N0&#45;&gt;N3 -->
+<g id="edge24" class="edge">
+<title>N0-&gt;N3</title>
+<g id="a_edge24"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#livesIn" xlink:title="ns1:livesIn">
+<path fill="none" stroke="#000000" d="M346.906,-630.533C306.6036,-624.9297 257.951,-616.3172 215.4454,-603.6 186.594,-594.968 155.5232,-581.0956 132.2881,-569.7362"/>
+<polygon fill="#000000" stroke="#000000" points="133.6703,-566.5148 123.1568,-565.2043 130.5583,-572.7851 133.6703,-566.5148"/>
+</a>
+</g>
+<g id="a_edge24-label"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#livesIn" xlink:title="ns1:livesIn">
+<text text-anchor="middle" x="246.5997" y="-591" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:livesIn</text>
+</a>
+</g>
+</g>
+<!-- N0&#45;&gt;N4 -->
+<g id="edge23" class="edge">
+<title>N0-&gt;N4</title>
+<g id="a_edge23"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#hasScientificName" xlink:title="ns1:hasScientificName">
+<path fill="none" stroke="#000000" d="M355.3427,-628.2928C335.4861,-622.9567 314.8709,-615.1154 297.8114,-603.6 287.8928,-596.9048 279.4369,-586.9209 272.8947,-577.4313"/>
+<polygon fill="#000000" stroke="#000000" points="275.7968,-575.4734 267.4376,-568.9638 269.9129,-579.2655 275.7968,-575.4734"/>
+</a>
+</g>
+<g id="a_edge23-label"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#hasScientificName" xlink:title="ns1:hasScientificName">
+<text text-anchor="middle" x="362.4167" y="-591" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:hasScientificName</text>
+</a>
+</g>
+</g>
+<!-- N0&#45;&gt;N5 -->
+<g id="edge22" class="edge">
+<title>N0-&gt;N5</title>
+<g id="a_edge22"><a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="a">
+<path fill="none" stroke="#000000" d="M430.8816,-621.2006C430.8816,-609.0949 430.8816,-593.0076 430.8816,-579.2674"/>
+<polygon fill="#000000" stroke="#000000" points="434.3817,-578.872 430.8816,-568.872 427.3817,-578.8721 434.3817,-578.872"/>
+</a>
+</g>
+<g id="a_edge22-label"><a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="a">
+<text text-anchor="middle" x="433.9889" y="-591" font-family="Times,serif" font-size="14.00" fill="#000000">a</text>
+</a>
+</g>
+</g>
+<!-- N1 -->
+<g id="node25" class="node">
+<title>N1</title>
+<g id="a_node25"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Clouded_Leopard" xlink:title="Clouded Leopard">
+<polygon fill="#ffff00" stroke="#ffff00" points="618.4666,-568.8 505.2966,-568.8 505.2966,-532.8 618.4666,-532.8 618.4666,-568.8"/>
+<text text-anchor="middle" x="561.8816" y="-546.6" font-family="Times,serif" font-size="14.00" fill="#000000">Clouded Leopard</text>
+</a>
+</g>
+</g>
+<!-- N0&#45;&gt;N1 -->
+<g id="edge26" class="edge">
+<title>N0-&gt;N1</title>
+<g id="a_edge26"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#name" xlink:title="ns1:name">
+<path fill="none" stroke="#000000" d="M456.763,-622.056C476.7744,-608.491 504.6889,-589.5688 526.723,-574.6327"/>
+<polygon fill="#000000" stroke="#000000" points="528.841,-577.4254 535.1546,-568.9172 524.9132,-571.6311 528.841,-577.4254"/>
+</a>
+</g>
+<g id="a_edge26-label"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#name" xlink:title="ns1:name">
+<text text-anchor="middle" x="535.7091" y="-591" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:name</text>
+</a>
+</g>
+</g>
+<!-- N2 -->
+<g id="node27" class="node">
+<title>N2</title>
+<g id="a_node27"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Clouded_Leopard_characteristics" xlink:title="ns1:Clouded_Leopard_characteristics">
+<ellipse fill="none" stroke="#000000" cx="868.8816" cy="-550.8" rx="156.8229" ry="18"/>
+<text text-anchor="middle" x="868.8816" y="-546.6" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:Clouded_Leopard_characteristics</text>
+</a>
+</g>
+</g>
+<!-- N0&#45;&gt;N2 -->
+<g id="edge25" class="edge">
+<title>N0-&gt;N2</title>
+<g id="a_edge25"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#hasCharacteristics" xlink:title="ns1:hasCharacteristics">
+<path fill="none" stroke="#000000" d="M496.4546,-626.3057C572.2465,-610.9397 697.3082,-585.5847 781.3544,-568.5452"/>
+<polygon fill="#000000" stroke="#000000" points="782.2894,-571.927 791.3946,-566.5097 780.8985,-565.0665 782.2894,-571.927"/>
+</a>
+</g>
+<g id="a_edge25-label"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#hasCharacteristics" xlink:title="ns1:hasCharacteristics">
+<text text-anchor="middle" x="752.47" y="-591" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:hasCharacteristics</text>
+</a>
+</g>
+</g>
+<!-- N15 -->
+<g id="node26" class="node">
+<title>N15</title>
+<g id="a_node26"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#Clouded_Leopard" xlink:title="Less than 10,000">
+<polygon fill="#ffff00" stroke="#ffff00" points="1644.6435,-480 1533.1197,-480 1533.1197,-444 1644.6435,-444 1644.6435,-480"/>
+<text text-anchor="middle" x="1588.8816" y="-457.8" font-family="Times,serif" font-size="14.00" fill="#000000">Less than 10,000</text>
+</a>
+</g>
+</g>
+<!-- N2&#45;&gt;N10 -->
+<g id="edge18" class="edge">
+<title>N2-&gt;N10</title>
+<g id="a_edge18"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#lifespan" xlink:title="ns1:lifespan">
+<path fill="none" stroke="#000000" d="M751.7538,-538.7212C665.6376,-528.2244 545.982,-510.2626 434.0622,-480.1694"/>
+<polygon fill="#000000" stroke="#000000" points="434.8655,-476.7608 424.297,-477.5071 433.0243,-483.5143 434.8655,-476.7608"/>
+</a>
+</g>
+<g id="a_edge18-label"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#lifespan" xlink:title="ns1:lifespan">
+<text text-anchor="middle" x="620.707" y="-502.2" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:lifespan</text>
+</a>
+</g>
+</g>
+<!-- N2&#45;&gt;N17 -->
+<g id="edge11" class="edge">
+<title>N2-&gt;N17</title>
+<g id="a_edge11"><a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="a">
+<path fill="none" stroke="#000000" d="M804.6471,-534.374C780.7819,-528.2538 753.4819,-521.2322 728.667,-514.8 682.2954,-502.7803 629.9655,-489.0836 590.2181,-478.6528"/>
+<polygon fill="#000000" stroke="#000000" points="590.9562,-475.228 580.3952,-476.0743 589.1789,-481.9986 590.9562,-475.228"/>
+</a>
+</g>
+<g id="a_edge11-label"><a xlink:href="http://www.w3.org/1999/02/22-rdf-syntax-ns#type" xlink:title="a">
+<text text-anchor="middle" x="731.9889" y="-502.2" font-family="Times,serif" font-size="14.00" fill="#000000">a</text>
+</a>
+</g>
+</g>
+<!-- N2&#45;&gt;N16 -->
+<g id="edge12" class="edge">
+<title>N2-&gt;N16</title>
+<g id="a_edge12"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#prey" xlink:title="ns1:prey">
+<path fill="none" stroke="#000000" d="M802.5665,-534.4339C787.8559,-529.3289 772.7605,-522.8604 759.6712,-514.8 747.9138,-507.5597 736.8008,-497.2028 727.8316,-487.5767"/>
+<polygon fill="#000000" stroke="#000000" points="730.4045,-485.2032 721.1269,-480.0868 725.1889,-489.872 730.4045,-485.2032"/>
+</a>
+</g>
+<g id="a_edge12-label"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#prey" xlink:title="ns1:prey">
+<text text-anchor="middle" x="783.9868" y="-502.2" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:prey</text>
+</a>
+</g>
+</g>
+<!-- N2&#45;&gt;N11 -->
+<g id="edge17" class="edge">
+<title>N2-&gt;N11</title>
+<g id="a_edge17"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#top_speed" xlink:title="ns1:top_speed">
+<path fill="none" stroke="#000000" d="M830.754,-533.1588C823.9383,-528.2157 817.752,-522.1362 813.782,-514.8 809.4929,-506.8742 810.7087,-497.7388 813.9959,-489.3186"/>
+<polygon fill="#000000" stroke="#000000" points="817.1944,-490.744 818.4043,-480.2185 810.8947,-487.6922 817.1944,-490.744"/>
+</a>
+</g>
+<g id="a_edge17-label"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#top_speed" xlink:title="ns1:top_speed">
+<text text-anchor="middle" x="853.9314" y="-502.2" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:top_speed</text>
+</a>
+</g>
+</g>
+<!-- N2&#45;&gt;N12 -->
+<g id="edge16" class="edge">
+<title>N2-&gt;N12</title>
+<g id="a_edge16"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#skin_type" xlink:title="ns1:skin_type">
+<path fill="none" stroke="#000000" d="M886.587,-532.6173C890.9192,-527.2542 895.1035,-521.1183 897.8816,-514.8 901.2028,-507.2465 903.1816,-498.5633 904.3501,-490.449"/>
+<polygon fill="#000000" stroke="#000000" points="907.8572,-490.5733 905.464,-480.2524 900.8986,-489.8131 907.8572,-490.5733"/>
+</a>
+</g>
+<g id="a_edge16-label"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#skin_type" xlink:title="ns1:skin_type">
+<text text-anchor="middle" x="942.7694" y="-502.2" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:skin_type</text>
+</a>
+</g>
+</g>
+<!-- N2&#45;&gt;N9 -->
+<g id="edge19" class="edge">
+<title>N2-&gt;N9</title>
+<g id="a_edge19"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#weight" xlink:title="ns1:weight">
+<path fill="none" stroke="#000000" d="M942.0086,-534.7642C957.1668,-529.6976 972.5621,-523.1619 985.8816,-514.8 997.0524,-507.787 1007.3357,-497.5907 1015.5667,-488.0242"/>
+<polygon fill="#000000" stroke="#000000" points="1018.3331,-490.1705 1021.9725,-480.2203 1012.9225,-485.7292 1018.3331,-490.1705"/>
+</a>
+</g>
+<g id="a_edge19-label"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#weight" xlink:title="ns1:weight">
+<text text-anchor="middle" x="1036.6004" y="-502.2" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:weight</text>
+</a>
+</g>
+</g>
+<!-- N2&#45;&gt;N14 -->
+<g id="edge14" class="edge">
+<title>N2-&gt;N14</title>
+<g id="a_edge14"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#habitat" xlink:title="ns1:habitat">
+<path fill="none" stroke="#000000" d="M964.4944,-536.4848C998.3134,-530.7043 1036.4869,-523.36 1070.8816,-514.8 1105.8472,-506.098 1144.2198,-493.8943 1175.0508,-483.4113"/>
+<polygon fill="#000000" stroke="#000000" points="1176.4577,-486.629 1184.7819,-480.0748 1174.1873,-480.0074 1176.4577,-486.629"/>
+</a>
+</g>
+<g id="a_edge14-label"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#habitat" xlink:title="ns1:habitat">
+<text text-anchor="middle" x="1161.5997" y="-502.2" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:habitat</text>
+</a>
+</g>
+</g>
+<!-- N2&#45;&gt;N13 -->
+<g id="edge15" class="edge">
+<title>N2-&gt;N13</title>
+<g id="a_edge15"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#predators" xlink:title="ns1:predators">
+<path fill="none" stroke="#000000" d="M995.4921,-540.1213C1056.3076,-534.1616 1130.1006,-525.7148 1195.8816,-514.8 1248.0881,-506.1376 1306.0852,-493.2738 1351.6391,-482.4123"/>
+<polygon fill="#000000" stroke="#000000" points="1352.5512,-485.7929 1361.4585,-480.0563 1350.9179,-478.9861 1352.5512,-485.7929"/>
+</a>
+</g>
+<g id="a_edge15-label"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#predators" xlink:title="ns1:predators">
+<text text-anchor="middle" x="1319.592" y="-502.2" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:predators</text>
+</a>
+</g>
+</g>
+<!-- N2&#45;&gt;N15 -->
+<g id="edge13" class="edge">
+<title>N2-&gt;N15</title>
+<g id="a_edge13"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#estimated_population_size" xlink:title="ns1:estimated_population_size">
+<path fill="none" stroke="#000000" d="M1018.2801,-545.2042C1116.0999,-540.229 1246.5255,-531.1124 1360.8816,-514.8 1416.3432,-506.8886 1478.2027,-492.1825 1523.4791,-480.2959"/>
+<polygon fill="#000000" stroke="#000000" points="1524.3986,-483.6732 1533.1687,-477.7288 1522.6058,-476.9066 1524.3986,-483.6732"/>
+</a>
+</g>
+<g id="a_edge13-label"><a xlink:href="http://www.semanticweb.org/tehno-trube/ontologies/2024/11/animals_ontology.owl#estimated_population_size" xlink:title="ns1:estimated_population_size">
+<text text-anchor="middle" x="1536.2" y="-502.2" font-family="Times,serif" font-size="14.00" fill="#000000">ns1:estimated_population_size</text>
+</a>
+</g>
+</g>
+</g>
+</svg>
